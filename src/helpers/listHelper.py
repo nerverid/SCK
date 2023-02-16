@@ -11,8 +11,8 @@ class ListHelper:
             ext = input("Do you want add new record (y/n)")
             if ext == 'y':
                 print("Please. Add new record")
-                title = input("Enter title")
-                author = input("Enter author")
+                title = input("Enter title: ")
+                author = input("Enter author: ")
                 newRecord = [title, author]
                 newList.append(newRecord)
             else:
