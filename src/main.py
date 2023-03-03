@@ -2,11 +2,16 @@
 from helpers.listHelper import ListHelper
 from engine import quiz
 from helpers import dateChecker
+from UI import mainWin
 
 def start():
     print("Welcome to system knowledge control")
-    check_source()
-    con_dialog()
+    which_start = input("Which the way do you want? Console - 'c', win - 'w': ")
+    if which_start == 'w':
+        mainWin.start_gui()
+    else:
+        check_source()
+        con_dialog()
     print("Bie-bie!")
     
 def con_dialog ():
@@ -25,6 +30,12 @@ def con_dialog ():
         
         if menu_Chose == "1":
             """Переходим в меню работы со списками"""
+            print("""
+                    Menu
+                1. Create list
+                2. Current list
+                3. All my list
+                q. Exit from programm""")
             talk = yes_no_ask("Do you want to create or read current list (c/r): ")
             if talk == "c":            
                 lHelper.create_list()
