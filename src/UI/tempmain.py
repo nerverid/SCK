@@ -13,9 +13,11 @@ class Application:
         self.lbl = tk.Label(self.frame, text = "Test for today")
         self.lbl.grid(row = 0, column = 0, columnspan = 2)
         self.lbl.pack()
+        self.test_txt = tk.Text(self.frame, width = 35)
+        #self.test_txt.grid(row = 1, rowspan = 10, column = 0)
+        self.test_txt.pack()
 
         self.btn_lists = tk.Button(self.frame, text="Lists", command=self.open_list)
-        #self.btn_lists["command"] = self.open_list()
         #self.btn_lists.grid(row = 1, column = 2, columnspan = 1)
         self.btn_lists.pack()
 
@@ -33,7 +35,9 @@ class QuizUI:
 
 class ListEditUI(Application):
     def show_widgets(self):
-        pass
+        self.lbl = tk.Label(self.frame, text = "List for today")
+        self.lbl.grid(row = 0, column = 0, columnspan = 2)
+        self.lbl.pack()
 
 
 root = tk.Tk()
