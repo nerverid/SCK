@@ -13,7 +13,7 @@ class Application:
         self.lbl = tk.Label(self.frame, text = "Test for today")
         self.lbl.grid(row = 0, column = 0, columnspan = 2)
         self.lbl.pack()
-        self.test_txt = tk.Text(self.frame, width = 35)
+        self.test_txt = tk.Text(self.frame, width = 35, height=10)
         #self.test_txt.grid(row = 1, rowspan = 10, column = 0)
         self.test_txt.pack()
 
@@ -27,6 +27,7 @@ class Application:
         global win_list
         win_list = ListEditUI
         win_list = tk.Toplevel(self.master)
+
         win_list.focus()        
         
 class QuizUI:
@@ -34,10 +35,15 @@ class QuizUI:
         pass
 
 class ListEditUI(Application):
-    def show_widgets(self):
+    def __init__(self):
         self.lbl = tk.Label(self.frame, text = "List for today")
-        self.lbl.grid(row = 0, column = 0, columnspan = 2)
+        #self.lbl.grid(row = 0, column = 0, columnspan = 2)
         self.lbl.pack()
+    def show_widgets(self):
+        #self.lbl = tk.Label(self.frame, text = "List for today")
+        #self.lbl.grid(row = 0, column = 0, columnspan = 2)
+        #self.lbl.pack()
+        pass
 
 
 root = tk.Tk()
