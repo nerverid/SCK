@@ -1,48 +1,53 @@
 #������ �������� �� �������� ������
-class ListHelper:
+self.grandList = []
 
-    def __init__(self):
-        self.grandList = []
+def create_list():
+    print("Here some very important dialog, how create list about")
+    newList = []
+    while(True):
+        ext = input("Do you want add new record (y/n)")
+        if ext == 'y':
+            print("Please. Add new record")
+            title = input("Enter title: ")
+            author = input("Enter author: ")
+            newRecord = [title, author]
+            newList.append(newRecord)
+        else:
+            break
+    grandList.append(newList)
 
-    def create_list(self):
-        print("Here some very important dialog, how create list about")
-        newList = []
-        while(True):
-            ext = input("Do you want add new record (y/n)")
-            if ext == 'y':
-                print("Please. Add new record")
-                title = input("Enter title: ")
-                author = input("Enter author: ")
-                newRecord = [title, author]
-                newList.append(newRecord)
-            else:
-                break
-        self.grandList.append(newList)
-
-    def delete_list(self):
-        pass
-
-    def edit_list(self):
-        pass
+def delete_list(val_list):
     
-    def save_list(self):
-        pass
 
-    def import_list(self):
-        pass
+def edit_list():
+    pass
 
-    def export_list(self):
-        pass
+def save_list():
+    pass
 
-    def display_list(self):
-        return self.grandList
+def import_list():
+    pass
 
-    def create_record(self):
-        pass
+def export_list():
+    pass
+
+def display_list():
+    return grandList
+
+def create_record():
+    pass
+
+def delete_record():
+    pass
+
+def downloa_list():
+    pass
+
+def simple_test_this_module():
+    book = { "category": "programming",
+             "book": [{"book_title": "the hitchhicker's guide to the galaxy",
+                       "author":"Douglas Adams",
+                       "bookmark": 32}]}
     
-    def delete_record(self):
-        pass
 
-    def downloa_list(slef):
-        pass
-
+simple_test_this_module()
