@@ -3,15 +3,17 @@ import mysql.connector
 
 mydb = mysql.connector.connect(host="localhost",
                                user="root",
-                               password="DERgfhjkm1+")
+                               password="DERgfhjkm1+",
+                               database="book_shelf"
+                               )
 
 mycursor = mydb.cursor()
 
-mycursor.execute("CREATE DATABASE mydatabase")
+#mycursor.execute("CREATE TABLE current_list (name VARCHAR(255), bookList VARCHAR(255))")
+mycursor.execute("SHOW TABLES")
 
-for x in mycurcor:
-    print(x)
-print(mydb)
+for x in mycursor:
+    print( x)
 
 def add_list():
     pass
