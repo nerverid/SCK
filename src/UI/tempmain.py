@@ -27,24 +27,34 @@ class Application:
         global win_list
         win_list = ListEditUI
         win_list = tk.Toplevel(self.master)
+        win_list.focus()
 
-        win_list.focus()        
+    def if_win_opened():
+        pass
         
 class QuizUI:
+    def __init__(self):
+        pass
+    
     def show_widgets(self):
         pass
 
 class ListEditUI(Application):
+    if_opend = False
     def __init__(self):
         self.lbl = tk.Label(self.frame, text = "List for today")
         #self.lbl.grid(row = 0, column = 0, columnspan = 2)
+        if_opend = True #Устанвливается если уже экземпляр уже запущен.
+        # Лучше здесь использовать паттерн "Синглентон"
         self.lbl.pack()
     def show_widgets(self):
         #self.lbl = tk.Label(self.frame, text = "List for today")
         #self.lbl.grid(row = 0, column = 0, columnspan = 2)
         #self.lbl.pack()
         pass
-
+    
+    def exit_on_close():
+        if_opend = False
 
 root = tk.Tk()
 app = Application(root)

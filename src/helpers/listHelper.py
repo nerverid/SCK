@@ -1,9 +1,8 @@
 #������ �������� �� �������� ������
-self.grandList = []
-
-def create_list():
+def create_list(self):
     print("Here some very important dialog, how create list about")
     newList = []
+        
     while(True):
         ext = input("Do you want add new record (y/n)")
         if ext == 'y':
@@ -14,40 +13,32 @@ def create_list():
             newList.append(newRecord)
         else:
             break
-    grandList.append(newList)
+    self.grandList.append(newList)
 
-def delete_list(val_list):
+def delete_list(self):
+    pass
+
+def edit_list(self):
+    pass
     
-
-def edit_list():
+def save_list(self):
     pass
 
-def save_list():
+def import_list(self):
     pass
 
-def import_list():
+def export_list(self):
     pass
 
-def export_list():
+def display_list(self):
+    return self.grandList
+
+def create_record(self):
     pass
-
-def display_list():
-    return grandList
-
-def create_record():
-    pass
-
-def delete_record():
-    pass
-
-def downloa_list():
-    pass
-
-def simple_test_this_module():
-    book = { "category": "programming",
-             "book": [{"book_title": "the hitchhicker's guide to the galaxy",
-                       "author":"Douglas Adams",
-                       "bookmark": 32}]}
     
+def delete_record(self):
+    pass
 
-simple_test_this_module()
+def downloa_list(slef):
+     pass
+

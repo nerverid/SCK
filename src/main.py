@@ -1,18 +1,18 @@
 # main
-from helpers.listHelper import ListHelper
+import helpers.listHelper
 from engine import quiz
 from helpers import dateChecker
-from UI import mainWin
+#from UI import mainWin
 
 def start():
     print("Welcome to system knowledge control")
-    which_start = input("Which the way do you want? Console - 'c', win - 'w': ")
-    if which_start == 'w':
-        mainWin.start_gui()
-    else:
-        check_source()
-        con_dialog()
-    print("Bie-bie!")
+    #which_start = input("Which the way do you want? Console - 'c', win - 'w': ")
+    #if which_start == 'w':
+    #    mainWin.start_gui()
+    #else:
+    check_source()
+    con_dialog()
+    #print("Bie-bie!")
     
 def con_dialog ():
     lHelper = ListHelper()
