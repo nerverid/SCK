@@ -15,7 +15,7 @@ def start():
     #print("Bie-bie!")
     
 def con_dialog ():
-    lHelper = ListHelper()
+    
     newSource = None
 
     while(True):
@@ -38,7 +38,7 @@ def con_dialog ():
                 q. Exit from programm""")
             talk = yes_no_ask("Do you want to create or read current list (c/r): ")
             if talk == "c":            
-                lHelper.create_list()
+                listHelper.create_list()
             elif talk == "r":
                 print("You read at the moment: \"The hitchhicker guide to the galaxy\"")
                 if check_source():
@@ -47,7 +47,7 @@ def con_dialog ():
                     print("Source not found")
             else:
                 print("Wrong input")
-            """save_result = yes_no_ask("Do you want to save this list? (y/n)")
+            """save_result = yes_no_ask("Do you want to save this list? (y/n) ")
                 if save_result == "y":
                     lHelper.save_list()
                     print(lHelper.display_list())
