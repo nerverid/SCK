@@ -26,9 +26,9 @@ def con_dialog ():
                 q. Exit from programm""")
 
         print("\n\nYou've got some tests today: ", check_test)
-        menu_Chose = input("Enter your chose")
+        menu_Choice = input("Enter your choice ")
         
-        if menu_Chose == "1":
+        if menu_Choice == "1":
             """Переходим в меню работы со списками"""
             print("""
                     Menu
@@ -53,14 +53,14 @@ def con_dialog ():
                     print(lHelper.display_list())
                 else:
                     print(lHelper.display_list())"""
-        elif menu_Chose == "2":
+        elif menu_Choice == "2":
             """dateChecker
             получаем текущую дату
             передаём дату в метод с тестами
             тест возвращает список тестов на текущую дату
             Переходим в меню работы с тестами"""
             quiz.start_this()
-        elif menu_Chose == "q":
+        elif menu_Choice == "q":
             talk = yes_no_ask("Do you want to exit? (y/n): ")
             if talk == 'y':
                 break

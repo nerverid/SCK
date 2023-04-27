@@ -5,8 +5,8 @@ first_book = '{ "category": "programming", "book": [{"book_title": "the hitchhic
 book_dict = json.loads(first_book)
 print(book_dict)
 
-def download_file():
-    with open('books.json', 'r') as read_f:
+def download_file(d_file):
+    with open(d_file, 'r') as read_f:
         data_f = json.load(read_f)
     print(json.dumps(data_f, indent = 4))
 
