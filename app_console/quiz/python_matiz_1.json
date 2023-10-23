@@ -1,0 +1,150 @@
+{
+    "category": "python",
+    "descripton":"list",
+    "questions": [
+        {   
+            "questtion":"Определение списка",
+            "answer1":"bicycle = ['wheel', 'trek']",
+            "answer2":"bicycle = (1, 3, 'treck')",
+            "answer3":"rocket = {fuel: 3, speed: 50}",
+            "answer4":"spaceship = 1, 2 , 3 ",
+            "right_answer":"1"
+        },
+        {   
+            "questtion":"Как добавить элемент в конец списка",
+            "answer1":"list.title(value)",
+            "answer2":"list.pop(palue)",
+            "answer3":"list.append(value)",
+            "answer4":"list.insert(1, value)",
+            "right_answer":"3"
+        },
+        {   
+            "questtion":"Как добавить элемент в произвольное место списка",
+            "answer1":"list.title(value)",
+            "answer2":"list.pop(palue)",
+            "answer3":"list.append(value)",
+            "answer4":"list.insert(1, value)",
+            "right_answer":"4"
+        },
+        {   
+            "questtion":"Как удалить произвольный элемент из списка",
+            "answer1":"del list[3]",
+            "answer2":"list.pop()",
+            "answer3":"list.append(value)",
+            "answer4":"list.insert(1, value)",
+            "right_answer":"1"
+        },
+        {   
+            "questtion":"Как извлечь произвольный элемент из списка",
+            "answer1":"del list[3]",
+            "answer2":"list.pop(4)",
+            "answer3":"list.append(value)",
+            "answer4":"list.insert(1, value)",
+            "right_answer":"2"
+        },
+        {   
+            "questtion":"Удаление элемента по значению. cars = ['bmv', 'mercedes', 'volkswagen', 'toyota']",
+            "answer1":"del cars[3]",
+            "answer2":"cars.pop(4)",
+            "answer3":"cars.append('dodge')",
+            "answer4":"cars.remove('toyota')",
+            "right_answer":"4"
+        },
+        {   
+            "questtion":"Чем отсортировать cars = ['bmv', 'mercedes', 'volkswagen', 'toyota']",
+            "answer1":"del cars[3]",
+            "answer2":"cars.pop(4)",
+            "answer3":"cars.sort()",
+            "answer4":"cars.sort(reverse=True)",
+            "right_answer":"3"
+        },
+        {   
+            "questtion":"Чем отсортировать в обратном порядке cars = ['bmv', 'mercedes', 'volkswagen', 'toyota']",
+            "answer1":"del cars[3]",
+            "answer2":"cars.pop(4)",
+            "answer3":"cars.sort()",
+            "answer4":"cars.sort(reverse=True)",
+            "right_answer":"4"
+        },
+        {   
+            "questtion":"Временная сортировка  cars = ['bmv', 'mercedes', 'volkswagen', 'toyota']",
+            "answer1":"cars.sorted(reverse=True)",
+            "answer2":"cars.pop(4)",
+            "answer3":"cars.sorted()",
+            "answer4":"cars.sort(reverse=True)",
+            "right_answer":"4"
+        },
+        {   
+            "questtion":"создать список с помощью Диапазона числового списка",
+            "answer1":"list(range(1, 10))",
+            "answer2":"[1..10]",
+            "answer3":"list(1, 20)",
+            "answer4":"list(20)",
+            "right_answer":"1"
+        },
+        {   
+            "questtion":"Как выглядит генератор списка?",
+            "answer1":"[x | x <- 1..10]",
+            "answer2":"[value**2 for value in range(1, 11)]",
+            "answer3":"[1..10]",
+            "answer4":"list(1, 11)",
+            "right_answer":"2"
+        },
+        {   
+            "questtion":"Срез списка",
+            "answer1":"list(1-2)",
+            "answer2":"colours = ['red', 'blue', 'green', 'brown', 'black'] (new string) print(colours[1:2])",
+            "answer3":"[1..10]",
+            "answer4":"list(1, 11)",
+            "right_answer":"2"
+        },
+        {   
+            "questtion":"Срез от заданного элемента до конца (colours = ['red', 'blue', 'green', 'brown', 'black'] )",
+            "answer1":"colours[:3]",
+            "answer2":"colours[:-3]",
+            "answer3":"colours[3:]",
+            "answer4":"colours[3.. len(colours)]",
+            "right_answer":"3"
+        },
+        {   
+            "questtion":"Как скопировать список. my_food = ['cake', 'lazanya', 'pizza']",
+            "answer1":"friends_food = my_food",
+            "answer2":"friends_food = my_food[]",
+            "answer3":"friends_food = my_food[:]",
+            "answer4":"friend_food = []",
+            "right_answer":"3"
+        },
+        {   
+            "questtion":"Перебор всех элемнтов списка",
+            "answer1":"for index in my_list:",
+            "answer2":"for i in len(my_list): my_list[i]",
+            "answer3":"for value from my_list:",
+            "answer4":"friend_food = []",
+            "right_answer":"1"
+        },
+        {   
+            "questtion":"генератор списка",
+            "answer1":"squares = [value**2 for value in range(1,11)]",
+            "answer2":"",
+            "answer3":"",
+            "answer4":"",
+            "right_answer":"1"
+        },
+        {
+            "questtion":"созать срез списка с 3го по 7й, list = [range(1,11)]",
+            "answer1":"",
+            "answer2":"",
+            "answer3":"print(list[2:7])",
+            "answer4":"",
+            "right_answer":"3"
+        },
+        {
+            "questtion":"скопировать список, list = [range(1,11)]",
+            "answer1":"",
+            "answer2":"",
+            "answer3":"list3 = list[:]",
+            "answer4":"",
+            "right_answer":"3"
+        }
+    ]
+}
