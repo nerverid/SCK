@@ -1,0 +1,8 @@
+__pycache__/
+myenv/
+venv
+*.pyc
+*.sqlite3
+logs/
+*.pyo
+*.pyd
