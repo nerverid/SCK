@@ -1,0 +1,62 @@
+{
+    "category": "python",
+    "descripton":"Tuple_Dict",
+    "questions": [
+        {   
+            "questtion":"Как определить прямоугольник, кортежем?",
+            "answer1":"dimensions = (200, 300)",
+            "answer2":"rectangle = [200, 300]",
+            "answer3":"rectangle = {200, 300}",
+            "answer4":"rectangle  = 200, 300, 5",
+            "right_answer":"1"
+        },
+        {   
+            "questtion":"Кто из прешельцев определён через словарь?",
+            "answer1":"alien_0 = ('color', 'green')",
+            "answer2":"alien_0 = ['color', 'green']",
+            "answer3":"alien_0 = {'color':'geen'}",
+            "answer4":"alien_0  = 'color'",
+            "right_answer":"3"
+        },   
+        {   
+            "questtion":"Как перебрать словарь alien_0 ={'color':'geen', x_position = 0, y_position = 20}?",
+            "answer1":"for value in alien_0:",
+            "answer2":"for key, value in alien_0.item():",
+            "answer3":"for i in alien_0:",
+            "answer4":"for i in alien_0.length():",
+            "right_answer":"2"
+        },   
+        {   
+            "questtion":"Как перебрать ключи в словаре alien_0 ={'color':'geen', x_position = 0, y_position = 20}?",
+            "answer1":"for name in alien_0:",
+            "answer2":"for key, value in alien_0.item():",
+            "answer3":"for name in alien_0.keys():",
+            "answer4":"Первый и третий способы",
+            "right_answer":"4"
+        },   
+        {   
+            "questtion":"Отсутствует ли элемент в alien_0?",
+            "answer1":"if 'erin' in favorite_languages.keys():",
+            "answer2":"for key, value in alien_0.item():",
+            "answer3":"if 'erin' not in favorite_languages.keys():",
+            "answer4":"if 'erin' in favorite_languages",
+            "right_answer":"3"
+        } ,   
+        {   
+            "questtion":"Как перебрать значения в словаре alien_0?",
+            "answer1":"for value in alien_0.values()",
+            "answer2":"for key, value in alien_0.item():",
+            "answer3":"for name in alien_0.keys():",
+            "answer4":"for name in alien_0:",
+            "right_answer":"1"
+        } ,   
+        {   
+            "questtion":"Как перебрать значения в словаре alien_0, чтобы они были уникальны?",
+            "answer1":"for value in set(alien_0.values())",
+            "answer2":"for key, value in alien_0.item():",
+            "answer3":"for name in alien_0.keys():",
+            "answer4":"for name in alien_0:",
+            "right_answer":"1"
+        }
+    ]
+}

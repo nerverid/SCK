@@ -1,6 +1,6 @@
 #Everyday Test
 import sys
-from ..helpers.jsonFileHelper import download_file
+#from ..helpers.jsonFileHelper import download_file
 
 def open_file(file_name, mode):
     """Open file"""
@@ -39,7 +39,6 @@ def welcome(title):
 
 def start_this():
     try:
-        
         trivia_file = open_file("trivia.txt", "r")
         title = next_line(trivia_file)
         welcome(title)
